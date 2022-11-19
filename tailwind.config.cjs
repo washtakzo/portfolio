@@ -2,7 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#243140",
+        secondary: "#cc5060",
+        blanc_creme: "#f4f4f4",
+      },
+      fontFamily: {
+        sans: ["Oxygen", "sans-serif"],
+        serif: ["Bodoni Moda", "serif"],
+      },
+    },
   },
   plugins: [],
 };
