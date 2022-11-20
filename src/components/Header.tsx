@@ -57,7 +57,7 @@ const Header = () => {
   );
 
   return (
-    <header className="min-w-[500px] mx-auto lg:w-[90%] xl:w-[70%]">
+    <header className="mx-auto lg:w-[90%] xl:w-[70%]">
       <div className="flex items-center justify-between p-4">
         <h1 className="font-serif text-3xl text-primary">
           Zoher Ouazzar<span className="text-secondary">.</span>
