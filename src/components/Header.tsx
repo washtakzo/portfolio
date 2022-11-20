@@ -40,9 +40,9 @@ const Header = () => {
   );
 
   return (
-    <header>
+    <header className="min-w-[500px] mx-auto lg:w-[90%] xl:w-[70%]">
       <div className="flex items-center justify-between p-4">
-        <h1 className="font-serif text-4xl text-primary">
+        <h1 className="font-serif text-3xl text-primary">
           Zoher Ouazzar<span className="text-secondary">.</span>
         </h1>
         {mobileBurgerButton}
