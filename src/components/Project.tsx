@@ -33,7 +33,7 @@ const Project = ({ title, description, technologies, image, order }: Props) => {
       <img
         src={image}
         alt=""
-        className={`w-[70%] object-contain lg:order-[${order}] lg:mx-8`}
+        className={`w-[70%] object-contain ${`lg:order-[${order}]`} lg:mx-8`}
       />
     </div>
   );

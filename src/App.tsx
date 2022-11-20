@@ -3,7 +3,8 @@ import CTAButton from "./components/CTAButton";
 import Header from "./components/Header";
 import Project from "./components/Project";
 import Testimonial from "./components/Testimonial";
-import { testimonials, projects } from "./assets/content";
+import Technologie from "./components/Technologie";
+import { testimonials, projects, technologies } from "./assets/content";
 
 function App() {
   return (
@@ -43,16 +44,28 @@ function App() {
           <h3 className="font-serif text-[32px] text-center sm:text-[48px]">
             Projets
           </h3>
-          {projects.map((project, index) => (
-            <Project
-              key={project.title}
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-              image={project.image}
-              order={index % 2 === 0 ? 1 : -1}
-            />
-          ))}
+          {projects.map(
+            ({ title, description, technologies, image }, index) => (
+              <Project
+                key={title}
+                title={title}
+                description={description}
+                technologies={technologies}
+                image={image}
+                order={index % 2 === 0 ? 1 : -1}
+              />
+            )
+          )}
+        </section>
+        <section className="py-20">
+          <h3 className="font-serif text-[32px] text-center sm:text-[48px] py-8">
+            Technologies
+          </h3>
+          <div className="grid grid-cols-2 mx-auto sm:grid-cols-4 max-w-[940px]">
+            {technologies.map(({ image, title }) => (
+              <Technologie key={title} image={image} title={title} />
+            ))}
+          </div>
         </section>
       </main>
     </>

@@ -1,15 +1,22 @@
-type testimonial = {
+export type Testimonial = {
   image: string;
   text: string;
   author: string;
 };
-type project = {
+
+export type Project = {
   title: string;
   description: string;
   technologies: string[];
   image: string;
 };
-export const testimonials: testimonial[] = [
+
+export type Technologie = {
+  title: string;
+  image: string;
+};
+
+export const testimonials: Testimonial[] = [
   {
     image:
       "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/631b0234135f700a7ff501c9_temoignage%20port%20folio%20totof.png",
@@ -24,7 +31,7 @@ export const testimonials: testimonial[] = [
   },
 ];
 
-export const projects: project[] = [
+export const projects: Project[] = [
   {
     title: "Ikimass App",
     description: `Application Android original permettant de faire des séances personnalisées en notant ses performances rapidement et en gardant un oeil sur sa progression.`,
@@ -83,5 +90,48 @@ export const projects: project[] = [
     ],
     image:
       "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/6371e7c460a89c1180c3b841_hulu_anime_mockup3-p-2600.jpg",
+  },
+];
+
+export const technologies: Technologie[] = [
+  {
+    title: "React Js",
+    image:
+      "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/62f56f303143f03b76fc7927_reacct%20icon-p-500.png",
+  },
+  {
+    title: "Javascript",
+    image:
+      "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/62f674d5ea0370f1a661981d_js-p-500.png",
+  },
+  {
+    title: "Typescript",
+    image:
+      "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/62f67467bab2af7a8961259a_ts.png",
+  },
+  {
+    title: "Next Js",
+    image:
+      "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/6347ad79ae7a72acdf54b3dd_7c546588-nextjs-p-500.png",
+  },
+  {
+    title: "Jest",
+    image:
+      "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/62f67590270e0cd71611a8a0_jest-p-500.png",
+  },
+  {
+    title: "Material UI",
+    image:
+      "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/62f674a7fd7b99bd122bb8c8_icons8-material-ui-48.png",
+  },
+  {
+    title: "Git",
+    image:
+      "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/631ad8970af8d1e09c09d809_git.png",
+  },
+  {
+    title: "Tailwind",
+    image:
+      "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/633ed8d9760fec7ad0dfde56_Tailwind-p-500.png",
   },
 ];
