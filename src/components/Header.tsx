@@ -16,7 +16,7 @@ const Header = () => {
       {isBurgerMenuClicked && <HiOutlineXMark className="w-[100%] h-[100%]" />}
     </button>
   );
-  const MobileBurgerMenu = isBurgerMenuClicked && (
+  const mobileBurgerMenu = isBurgerMenuClicked && (
     <div className="relative">
       <div
         className={`header__burger_menu pt-5 h-72 shadow-xl z-10 absolute w-full bg-white 
@@ -38,6 +38,23 @@ const Header = () => {
       </div>
     </div>
   );
+  const computerScreenLinks = (
+    <div className="hidden lg:flex justify-between items-center w-[460px]">
+      <a
+        href=""
+        className="text-center text-primary text-xl p-5 font-normal hover:text-secondary"
+      >
+        Projets
+      </a>
+      <a
+        href=""
+        className="text-center text-primary text-xl p-5 font-normal hover:text-secondary"
+      >
+        Linkedin
+      </a>
+      <CTAButton className="">Contactez-moi</CTAButton>
+    </div>
+  );
 
   return (
     <header className="min-w-[500px] mx-auto lg:w-[90%] xl:w-[70%]">
@@ -46,23 +63,9 @@ const Header = () => {
           Zoher Ouazzar<span className="text-secondary">.</span>
         </h1>
         {mobileBurgerButton}
-        <div className="hidden lg:flex justify-between items-center w-[460px]">
-          <a
-            href=""
-            className="text-center text-primary text-xl p-5 font-normal hover:text-secondary"
-          >
-            Projets
-          </a>
-          <a
-            href=""
-            className="text-center text-primary text-xl p-5 font-normal hover:text-secondary"
-          >
-            Linkedin
-          </a>
-          <CTAButton className="">Contactez-moi</CTAButton>
-        </div>
+        {computerScreenLinks}
       </div>
-      {MobileBurgerMenu}
+      {mobileBurgerMenu}
     </header>
   );
 };
