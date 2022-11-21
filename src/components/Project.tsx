@@ -6,13 +6,21 @@ type Props = {
   description: string;
   technologies: string[];
   image: string;
+  link: string;
   order: number;
 };
 
-const Project = ({ title, description, technologies, image, order }: Props) => {
+const Project = ({
+  title,
+  description,
+  technologies,
+  image,
+  link,
+  order,
+}: Props) => {
   return (
-    <div className="flex flex-col items-center justify-evenly lg:flex-row py-4 lg:py-28">
-      <div className="py-8">
+    <div className="flex flex-col items-center justify-evenly lg:flex-row py-4 lg:py-28 cursor-pointer hover:scale-105 hover:shadow-xl transition duration-300 ease-out">
+      <div className="my-8">
         <h4 className="text-center font-serif text-primary text-[22px] sm:text-[32px] lg:text-left">
           {title}
         </h4>

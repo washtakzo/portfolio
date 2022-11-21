@@ -9,6 +9,7 @@ export type Project = {
   description: string;
   technologies: string[];
   image: string;
+  link: string;
 };
 
 export type Technologie = {
@@ -47,6 +48,7 @@ export const projects: Project[] = [
     ],
     image:
       "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/633f2d888a14aababe67bf1b_2211__mobile_only-p-1600.png",
+    link: "https://play.google.com/store/apps/details?id=com.khuwarizmi.ikimasse",
   },
   {
     title: "Train&Drink",
@@ -62,6 +64,7 @@ export const projects: Project[] = [
     ],
     image:
       "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/634d3cda05fc10f6939c5625_PSD_07__only_pc__TandD2-p-1600.jpg",
+    link: "https://train-and-drink.vercel.app/",
   },
   {
     title: "Netflix Clone",
@@ -69,6 +72,7 @@ export const projects: Project[] = [
     technologies: ["React js", "Redux", "Firebase", "Router", "Stripe"],
     image:
       "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/6357c5f0735ff409e2f6d154_1463%20v2-p-1600.png",
+    link: "https://netflix-clone-ee57f.web.app/",
   },
   {
     title: "Your Sweets",
@@ -76,6 +80,7 @@ export const projects: Project[] = [
     technologies: ["React js", "Context API", "Material UI"],
     image:
       "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/635ffb0b733c63d8b979a976_v2-p-1600.jpg",
+    link: "",
   },
   {
     title: "Hulu-Anime",
@@ -90,6 +95,7 @@ export const projects: Project[] = [
     ],
     image:
       "https://uploads-ssl.webflow.com/62f3ee8686515cd11e272485/6371e7c460a89c1180c3b841_hulu_anime_mockup3-p-2600.jpg",
+    link: "https://hulu-anime.vercel.app/",
   },
 ];
 

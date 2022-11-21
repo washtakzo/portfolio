@@ -51,13 +51,14 @@ function App() {
             Projets
           </h3>
           {projects.map(
-            ({ title, description, technologies, image }, index) => (
+            ({ title, description, technologies, image, link }, index) => (
               <Project
                 key={title}
                 title={title}
                 description={description}
                 technologies={technologies}
                 image={image}
+                link={link}
                 order={index % 2 === 0 ? 1 : -1}
               />
             )
