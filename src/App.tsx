@@ -19,6 +19,8 @@ function App() {
     });
   }, []);
 
+  //TODO: Header : update mobile mode cross and burger menu animations
+
   return (
     <>
       <Header />
