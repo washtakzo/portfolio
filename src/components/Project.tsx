@@ -18,13 +18,14 @@ const Project = ({
   link,
   order,
 }: Props) => {
+  const orderStyle = "lg:order-[" + order + "]";
   return (
-    <div className="flex flex-col items-center justify-evenly lg:flex-row py-4 lg:py-28 cursor-pointer hover:scale-105 hover:shadow-xl transition duration-300 ease-out">
-      <div className="my-8">
+    <div className="bg-red-100s my-8 px-4 lg:px-12 flex flex-col items-center justify-evenly lg:flex-row py-4 lg:py-28 cursor-pointer hover:scale-105 hover:shadow-xl transition duration-300 ease-out">
+      <div className="bg-green-100s">
         <h4 className="text-center font-serif text-primary text-[22px] sm:text-[32px] lg:text-left">
           {title}
         </h4>
-        <p className="font-sans text-[16px] w-[70%] mx-auto leading-7 text-primary text-center py-4 px-8 sm:text-[18px] sm:py-8 lg:text-left lg:px-0 lg:w-[280px]">
+        <p className="bg-orange-200s font-sans text-[16px] w-[70%] mx-auto lg:mx-0 leading-7 text-primary text-center py-4 sm:text-[18px] sm:py-8 lg:text-left lg:px-0 lg:w-[280px]">
           {description}
         </p>
         <div className="project__grid mx-auto w-[220px] gap-1 grid-cols-2 sm:grid-cols-3 sm:w-[380px] lg:grid-cols-2 lg:w-[260px] lg:gap-3 lg:ml-0">
@@ -38,11 +39,9 @@ const Project = ({
           ))}
         </div>
       </div>
-      <img
-        src={image}
-        alt=""
-        className={`w-[70%] object-contain ${`lg:order-[${order}]`} lg:mx-8`}
-      />
+      <div className={`${orderStyle}  mt-4 lg:px-8`}>
+        <img src={image} alt={title} className="" />
+      </div>
     </div>
   );
 };
