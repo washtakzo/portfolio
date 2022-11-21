@@ -24,7 +24,10 @@ function App() {
                 <span className="text-secondary"> santé et bien-être, </span>
                 soignées et maintenables
               </h2>
-              <CTAButton className="block mx-auto mt-8 py-3 px-6 text-xl sm:m-0 sm:self-start">
+              <CTAButton
+                className="block mx-auto mt-8 py-3 px-6 text-xl sm:m-0 sm:self-start"
+                link="https://calendly.com/zoher-ouazzar/30min"
+              >
                 Contactez-moi
               </CTAButton>
             </div>
@@ -41,7 +44,10 @@ function App() {
           ))}
         </section>
         <section className="py-20">
-          <h3 className="font-serif text-[32px] text-center sm:text-[48px]">
+          <h3
+            className="font-serif text-[32px] text-center sm:text-[48px]"
+            id="projects"
+          >
             Projets
           </h3>
           {projects.map(
@@ -68,8 +74,19 @@ function App() {
           </div>
         </section>
       </main>
+      <footer className="flex flex-col bg-primary text-white my-8 w-[94%] py-8 px-8 rounded-xl sm:py-20 lg:py-[60px] lg:px-[100px] max-w-[1200px] mx-auto">
+        <h5 className="text-[22px] sm:text-[28px] font-semibold text-center mb-8 md:text-[32px] lg:text-[42px]">
+          Parlons de vos projets et voyons ensemble comment je peux vous aider à
+          les réaliser
+        </h5>
+        <CTAButton
+          className="mx-auto text-[15px] px-8 md:text-[16px]"
+          link="https://calendly.com/zoher-ouazzar/30min"
+        >
+          Contactez-moi
+        </CTAButton>
+      </footer>
     </>
-    //Technologie Section
     //Lets talk
   );
 }
