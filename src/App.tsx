@@ -98,6 +98,7 @@ function App() {
       </main>
       <footer
         data-aos="zoom-in-down"
+        data-aos-delay="160"
         className="my-8 mx-auto flex w-[94%] max-w-[1200px] cursor-pointer flex-col rounded-xl bg-primary py-8 px-8 text-white transition duration-300 ease-out hover:scale-105 sm:py-20 lg:py-[60px] lg:px-[100px]"
       >
         <h5 className="mb-8 text-center text-[22px] font-semibold sm:text-[28px] md:text-[32px] lg:text-[42px]">
