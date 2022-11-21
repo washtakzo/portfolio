@@ -8,6 +8,8 @@ import { testimonials, projects, technologies } from "./assets/content";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+const CALENDLY_LINK = "https://calendly.com/zoher-ouazzar/30min";
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -97,9 +99,10 @@ function App() {
         </section>
       </main>
       <footer
-        data-aos="zoom-in-down"
-        data-aos-delay="160"
-        className="my-8 mx-auto flex w-[94%] max-w-[1200px] cursor-pointer flex-col rounded-xl bg-primary py-8 px-8 text-white transition duration-300 ease-out hover:scale-105 sm:py-20 lg:py-[60px] lg:px-[100px]"
+        onClick={() => {
+          window.open(CALENDLY_LINK, "_blank");
+        }}
+        className="my-8 mx-auto flex w-[94%] max-w-[1200px] cursor-pointer flex-col rounded-xl bg-primary py-8 px-8 text-white transition  duration-300 ease-out hover:scale-105 sm:py-20 lg:py-[60px] lg:px-[100px]"
       >
         <h5 className="mb-8 text-center text-[22px] font-semibold sm:text-[28px] md:text-[32px] lg:text-[42px]">
           Parlons de vos projets et voyons ensemble comment je peux vous aider à
@@ -107,7 +110,7 @@ function App() {
         </h5>
         <CTAButton
           className="mx-auto px-8 text-[15px] transition duration-300 ease-out hover:scale-105 md:text-[16px]"
-          link="https://calendly.com/zoher-ouazzar/30min"
+          link={CALENDLY_LINK}
         >
           Contactez-moi
         </CTAButton>
