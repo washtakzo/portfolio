@@ -36,7 +36,7 @@ function App() {
             <div className="h-[242px]s flex flex-col justify-between sm:h-[280px] md:h-[340px]  lg:h-auto lg:max-w-[740px] lg:justify-evenly">
               <h2
                 data-aos="fade-down"
-                className="mx-auto max-w-[445px] font-serif text-3xl leading-[3rem] sm:max-w-none sm:text-[42px] sm:leading-[3.8rem] md:text-[52px] md:leading-[4.2rem]"
+                className="mx-auto max-w-[445px] font-serif text-3xl leading-[3rem] text-primary sm:max-w-none sm:text-[42px] sm:leading-[3.8rem] md:text-[52px] md:leading-[4.2rem]"
               >
                 Des applications React orientées
                 <span className="text-secondary"> santé et bien-être, </span>
@@ -68,7 +68,7 @@ function App() {
         <section className="py-20">
           <h3
             data-aos="fade-up"
-            className="text-center font-serif text-[32px] sm:text-[48px]"
+            className="text-center font-serif text-[32px] text-primary sm:text-[48px]"
             id="projects"
           >
             Projets
@@ -88,7 +88,7 @@ function App() {
           )}
         </section>
         <section data-aos="fade-up" className="py-20">
-          <h3 className="py-8x text-center font-serif text-[32px] sm:text-[48px]">
+          <h3 className="py-8x text-center font-serif text-[32px] text-primary sm:text-[48px]">
             Technologies
           </h3>
           <div className="mx-auto grid max-w-[940px] grid-cols-2 sm:grid-cols-4 lg:my-[144px] lg:gap-6">

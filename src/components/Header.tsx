@@ -16,14 +16,14 @@ const Header = () => {
       className="h-10 w-auto lg:hidden"
       onClick={() => setIsBurgerMenuClicked((prevState) => !prevState)}
     >
-      {!isBurgerMenuClicked && <HiBars3 className="w-[100%] h-[100%]" />}
-      {isBurgerMenuClicked && <HiOutlineXMark className="w-[100%] h-[100%]" />}
+      {!isBurgerMenuClicked && <HiBars3 className="h-[100%] w-[100%]" />}
+      {isBurgerMenuClicked && <HiOutlineXMark className="h-[100%] w-[100%]" />}
     </button>
   );
   const mobileBurgerMenu = isBurgerMenuClicked && (
     <div className="relative lg:hidden">
       <div
-        className={`header__burger_menu cursor-pointer pt-5 h-72 shadow-xl z-10 absolute w-full bg-white 
+        className={`header__burger_menu absolute z-10 h-72 w-full cursor-pointer bg-white pt-5 shadow-xl 
           ${isBurgerMenuClicked && "header__burger_menu_isOpen"}`}
       >
         <a
@@ -31,19 +31,19 @@ const Header = () => {
             e.preventDefault();
             scrollToSectionId("projects");
           }}
-          className="block w-full text-center text-primary text-xl p-5 font-normal hover:text-secondary"
+          className="block w-full p-5 text-center text-xl font-normal text-primary hover:text-secondary"
         >
           Projets
         </a>
         <a
           href="https://www.linkedin.com/in/zoher-ouazzar-3b12b6b8/"
           target="_blank"
-          className="block w-full text-center text-primary text-xl p-5 font-normal hover:text-secondary"
+          className="block w-full p-5 text-center text-xl font-normal text-primary hover:text-secondary"
         >
           Linkedin
         </a>
         <CTAButton
-          className="block m-auto mt-2"
+          className="m-auto mt-2 block"
           link="https://calendly.com/zoher-ouazzar/30min"
         >
           Contactez-moi
@@ -52,9 +52,9 @@ const Header = () => {
     </div>
   );
   const computerScreenLinks = (
-    <div className="hidden lg:flex justify-between items-center w-[460px]">
+    <div className="hidden w-[460px] items-center justify-between lg:flex">
       <a
-        className="text-center text-primary text-xl p-5 font-normal hover:text-secondary cursor-pointer"
+        className="cursor-pointer p-5 text-center text-xl font-normal text-primary hover:text-secondary"
         onClick={(e) => {
           e.preventDefault();
           scrollToSectionId("projects");
@@ -65,7 +65,7 @@ const Header = () => {
       <a
         href="https://www.linkedin.com/in/zoher-ouazzar-3b12b6b8/"
         target="_blank"
-        className="text-center text-primary text-xl p-5 font-normal hover:text-secondary"
+        className="p-5 text-center text-xl font-normal text-primary hover:text-secondary"
       >
         Linkedin
       </a>
@@ -76,10 +76,10 @@ const Header = () => {
   );
 
   return (
-    <header className="mx-auto lg:w-[90%] xl:w-[70%]">
+    <header className="mx-auto max-w-[1500px] lg:w-[90%] xl:w-[70%]">
       <div className="flex items-center justify-between p-4">
         <h1
-          className="font-serif text-3xl text-primary cursor-pointer"
+          className="cursor-pointer font-serif text-3xl text-primary"
           onClick={() => location.reload()}
         >
           Zoher Ouazzar<span className="text-secondary">.</span>
