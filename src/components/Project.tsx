@@ -22,14 +22,13 @@ const Project = ({
     if (link) window.open(link, "_blank")?.focus();
   };
   const orderStyle = "lg:order-[" + order + "]";
-  console.log(orderStyle);
 
   return (
     <div
       className="my-8 flex cursor-pointer flex-col items-center justify-evenly px-4 py-4 transition duration-300 ease-out hover:scale-105 lg:mx-auto lg:w-[90%] lg:flex-row lg:px-12 lg:py-28"
       onClick={projectClickHandler}
     >
-      <div>
+      <div data-aos="fade-up">
         <h4 className="text-center font-serif text-[22px] text-primary sm:text-[32px] lg:text-left">
           {title}
         </h4>
@@ -47,7 +46,7 @@ const Project = ({
           ))}
         </div>
       </div>
-      <div className={`${orderStyle} mt-4 lg:px-8`}>
+      <div data-aos="zoom-in" className={`${orderStyle} mt-4 lg:px-8`}>
         <img src={image} alt={title} className="" />
       </div>
     </div>
