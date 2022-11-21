@@ -65,10 +65,10 @@ function App() {
           )}
         </section>
         <section className="py-20">
-          <h3 className="font-serif text-[32px] text-center sm:text-[48px] py-8">
+          <h3 className="font-serif text-[32px] text-center sm:text-[48px] py-8x">
             Technologies
           </h3>
-          <div className="grid grid-cols-2 mx-auto sm:grid-cols-4 max-w-[940px]">
+          <div className="grid grid-cols-2 mx-auto sm:grid-cols-4 max-w-[940px] lg:gap-6 lg:my-[144px]">
             {technologies.map(({ image, title }) => (
               <Technologie key={title} image={image} title={title} />
             ))}
