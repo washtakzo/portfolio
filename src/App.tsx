@@ -20,7 +20,6 @@ function App() {
   }, []);
 
   //TODO: Project : display projects left and right order
-  //TODO: Footer : animate fade-up footer ?
   //TODO: Header : update mobile mode - cross and burger menu animations
 
   return (
