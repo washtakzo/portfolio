@@ -19,13 +19,16 @@ const CTAButton = ({
   aosDuration,
   aosEasing,
 }: Props) => {
+  const isPropsContainTextSize = className?.includes("text");
   return (
     <button
       data-aos={aos}
       data-aos-delay={aosDelay}
       data-aos-duration={aosDuration}
       data-aos-easing={aosEasing}
-      className={`rounded-full bg-secondary py-2 px-6 text-lg text-white ${className}`}
+      className={`rounded-full bg-secondary py-2 px-6 ${
+        !isPropsContainTextSize && "text-lg"
+      } text-white ${className}`}
       onClick={() => {
         if (link) {
           window.open(link, "_blank")?.focus();
