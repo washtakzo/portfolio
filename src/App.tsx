@@ -113,7 +113,7 @@ function App() {
             à les réaliser
           </h5>
           <CTAButton
-            className="mx-auto px-8 text-[15px] transition duration-300 ease-out hover:scale-105 md:text-[16px]"
+            className="mx-auto py-1 px-4 text-[13px] transition duration-300 ease-out hover:scale-105 sm:py-2 sm:px-8 sm:text-[15px] md:text-[16px]"
             link={CALENDLY_LINK}
           >
             Contactez-moi
