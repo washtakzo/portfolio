@@ -13,7 +13,7 @@ const Header = () => {
 
   const mobileBurgerButton = (
     <button
-      className="h-6 w-auto sm:h-10 lg:hidden"
+      className="h-8 w-auto sm:h-10 lg:hidden"
       onClick={() => setIsBurgerMenuClicked((prevState) => !prevState)}
     >
       {!isBurgerMenuClicked && <HiBars3 className="h-[100%] w-[100%]" />}
